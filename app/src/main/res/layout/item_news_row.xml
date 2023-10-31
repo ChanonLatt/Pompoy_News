@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingBottom="22dp"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintBottom_toBottomOf="parent"
+     android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <ImageView
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/img_mock_news"/>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginLeft="20dp">
+             <TextView
+                 android:id="@+id/txtNewsTitle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Hello this is my news title"
+                 android:textAlignment="textStart"/>
+             <TextView
+                 android:id="@+id/txtNewsDescription"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16dp"
+                 android:text="News description is News description News description News description News description News description"
+                 android:textAlignment="textStart"/>
+         </LinearLayout>
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="12dp">
+         <TextView
+             android:id="@+id/txtNewsStatus"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Status of News"
+             android:textAlignment="textStart"/>
+         <TextView
+             android:id="@+id/txtNewsdate"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"
+             android:text="10.20.2023 13:03 AM"
+             android:textAlignment="textStart"/>
+     </LinearLayout>
+ </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
